@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>$title$</title>
+
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+
+  <!-- Bootstrap theme (required if you use toc_float; harmless otherwise) -->
+  $if(theme)$
+  <link rel="stylesheet" href="$theme$" />
+  $endif$
+
+  <!-- Any css: entries from YAML -->
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+</head>
+
+<body>
+
+  <!-- LOGO FIRST -->
+  <header class="report-header">
+    <img src="Secondary Logo_black and blue_updated.svg" alt="The Rock Pool Project logo" class="report-logo">
+  </header>
+
+  <!-- THEN TOC -->
+  $if(toc)$
+  <nav id="TOC" role="doc-toc">
+    $toc$
+  </nav>
+  $endif$
+
+  <!-- THEN BODY -->
+  $body$
+
+  $for(include-after)$
+  $include-after$
+  $endfor$
+
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.getElementById("TOC");
+  const target = document.getElementById("toc-here");
+  if (toc && target) target.appendChild(toc);
+});
+</script>
+

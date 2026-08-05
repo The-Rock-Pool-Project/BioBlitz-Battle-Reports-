@@ -70,3 +70,188 @@ table tbody tr:nth-child(odd) {
   margin: 0.5rem 0 1.25rem 0;
   color: #191D2D;
 }
+
+
+/* ---------- Generic layouts ---------- */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.card-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.report-card {
+    background: #fafafa;
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid #ececec;
+}
+
+.panel {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:900px){
+
+.two-column{
+    grid-template-columns:1fr;
+}
+
+.card-row{
+    flex-direction:column;
+}
+
+}
+
+.intro-wrapper{
+    margin:0 auto;
+    max-width:100%;
+}
+
+.signature-intro-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 28px 0 34px 0;
+  padding: 28px 32px;
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 44, 67, 0.98),
+      rgba(20, 91, 123, 0.94)
+    );
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.signature-intro-icon {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffd54f;
+  color: #17212b;
+  font-size: 34px;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.signature-intro-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.signature-intro-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.signature-intro-title {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.signature-intro-text {
+  max-width: 760px;
+  margin: 0 0 8px 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.signature-intro-text:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .signature-intro-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  .signature-intro-icon {
+    flex-basis: 56px;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+  }
+
+  .signature-intro-title {
+    font-size: 25px;
+  }
+
+  .signature-intro-text {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 700px) {
+  .signature-species-card {
+    min-height: 0 !important;
+    background-position: center !important;
+  }
+
+  .signature-species-card-content {
+    max-width: none !important;
+    padding: 24px 20px !important;
+  }
+
+  .signature-species-card-overlay {
+    background: rgba(5, 25, 38, 0.84) !important;
+  }
+
+  .signature-species-card-metrics {
+    gap: 8px !important;
+  }
+
+  .signature-species-card-metrics > div {
+    flex: 1 1 140px;
+    text-align: center;
+  }
+
+  .signature-species-card-attribution {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    max-width: none !important;
+    margin: 0 20px 16px 20px;
+    text-align: left !important;
+  }
+}

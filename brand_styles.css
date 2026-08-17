@@ -255,3 +255,28 @@ table tbody tr:nth-child(odd) {
     text-align: left !important;
   }
 }
+
+/* ---------- Mobile funding panel ---------- */
+
+@media (max-width: 700px) {
+
+  /* Stack the intro and funders panels */
+  .intro-wrapper > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Give the funders panel comfortable width */
+  .intro-wrapper > div > div:last-child {
+    padding: 24px 20px !important;
+    gap: 20px !important;
+  }
+
+  /* Prevent logos from being stretched/squashed */
+  .intro-wrapper > div > div:last-child img {
+    width: auto !important;
+    max-width: 180px !important;
+    height: auto !important;
+    max-height: 90px !important;
+    object-fit: contain !important;
+  }
+}

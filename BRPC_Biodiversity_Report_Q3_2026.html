@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>BRPC_Biodiversity_Report_Q3_2026.knit</title>
+
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/header-attrs-2.31/header-attrs.js"></script>
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="BRPC_Biodiversity_Report_Q3_2026_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/navigation-1.1/tabsets.js"></script>
+<link href="BRPC_Biodiversity_Report_Q3_2026_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="BRPC_Biodiversity_Report_Q3_2026_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="brand_styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<header class="report-header">
+  <img src="Secondary%20Logo_black%20and%20blue_updated.svg"
+       alt="The Rock Pool Project logo"
+       class="report-logo">
+</header>
+
+<div class="report-title">
+  Big Rock Pool Challenge – Biodiversity Report
+</div>
+
+<div id="toc-here"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.getElementById("TOC");
+  const target = document.getElementById("toc-here");
+  if (toc && target) target.appendChild(toc);
+});
+</script>
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div style="&#10;    transform: scale(0.9);&#10;    transform-origin: top left;&#10;    width: 111%;&#10;  ">
+<div style="&#10;      position:relative;&#10;      margin-top:18px;&#10;      display:grid;&#10;      grid-template-columns: 2.2fr 1fr;&#10;      gap:20px;&#10;      align-items:stretch;&#10;    ">
+<div style="&#10;  background: rgba(25, 95, 170, 0.55);&#10;  backdrop-filter: blur(14px);&#10;  -webkit-backdrop-filter: blur(14px);&#10;  border: 1px solid rgba(255,255,255,0.16);&#10;  border-radius:18px;&#10;  overflow:hidden;&#10;  box-shadow:0 6px 20px rgba(0,0,0,0.18);&#10;  color:white;&#10;  display:flex;&#10;  flex-direction:column;&#10;">
+<img src="FB%20TRPP.png" style="&#10;        width:100%;&#10;        height:220px;&#10;        object-fit:cover;&#10;        display:block;&#10;      "/>
+<div style="&#10;        padding:22px 24px 24px 24px;&#10;        font-size:15px;&#10;        line-height:1.65;&#10;        color:rgba(255,255,255,0.95);&#10;      ">
+<p>
+<a href="https://www.therockpoolproject.co.uk/the-big-rock-pool-challenge" style="&#10;            color:#D6F2FF;&#10;            font-weight:700;&#10;            text-decoration:none;&#10;          ">The Big Rock Pool Challenge</a>
+ is a UK-wide citizen science initiative run by the Rock Pool Project, bringing people together to explore and record life on UK rocky shores. Participants take part in monthly BioBlitz Battle games, recording coastal marine life at designated monitoring hubs using the iNaturalist platform and the BioBlitz Battle app.
+</p>
+<p>Records are verified through community identifications, allowing observations to reach research-grade status. Every record added helps build a growing picture of coastal biodiversity around the UK.</p>
+<p>The Big Rock Pool Challenge is run by The Rock Pool Project, in partnership with the Marine Biological Association, and is funded by the ScottishPower Foundation and the National Lottery Heritage Fund.</p>
+</div>
+</div>
+<div style="&#10;      background:#ffffff;&#10;      color:#222222;&#10;      border-radius:18px;&#10;      padding:20px;&#10;      display:flex;&#10;      flex-direction:column;&#10;      justify-content:center;&#10;      align-items:center;&#10;      gap:24px;&#10;      box-shadow:0 6px 18px rgba(0,0,0,0.10);&#10;    ">
+<div style="&#10;        font-size:15px;&#10;        font-weight:700;&#10;        letter-spacing:0.3px;&#10;        color:#222222;&#10;      ">Funding &amp; Partners</div>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/67dc251080bf058c3bffd547_hf-logo.png" style="&#10;        width:100%;&#10;        max-width:220px;&#10;        object-fit:contain;&#10;      "/>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/690234a2aeabe1446d63c1cc_AAFF%20LOGOTYPE%20SCOTTISHPOWER%20FOUNDATION%20RGB-p-2000.jpg" style="&#10;        width:100%;&#10;        max-width:220px;&#10;        object-fit:contain;&#10;      "/>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/67b4f7fae1b32ae21a76b697_Untitled%20design%20(11).png" style="&#10;        width:100%;&#10;        max-width:220px;&#10;        object-fit:contain;&#10;      "/>
+</div>
+</div>
+</div>
+<div style="height:20px;">
+
+</div>
+<div id="big-rock-pool-challenge-biodiversity-report---q3-2026"
+class="section level1">
+<h1>Big Rock Pool Challenge Biodiversity Report - Q3 2026</h1>
+<p>This report explores data collected through the Big Rock Pool
+Challenge between the 1st of July 2026 and the 30 September 2026. During
+this time, we had regular monthly events taking place across nine hubs
+around the UK coastline, along with several pilot events, and our annual
+Community BioBlitz Festival.</p>
+<div style="&#10;    margin-top:24px;&#10;    padding:26px 30px;&#10;    background:linear-gradient(135deg, #eaf4f8 0%, #f4f8fa 100%);&#10;    border:1px solid #cbdfe8;&#10;    border-left:6px solid #1976a5;&#10;    border-radius:16px;&#10;    box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;    color:#243746;&#10;    font-size:14px;&#10;    line-height:1.7;&#10;    width:100%;&#10;    box-sizing:border-box;&#10;  ">
+<div style="&#10;      margin-bottom:14px;&#10;      color:#155675;&#10;      font-size:19px;&#10;      font-weight:700;&#10;    ">
+<span style="color:#1976a5;">◆ </span>
+Project News: Our Data Reaches a Wider Audience
+</div>
+<p style="margin:0 0 16px 0;">All verified data collected by the Rock Pool Project using iNaturalist has now been published as part of a marine subset collated and archived by the UK Archive for Marine Species and Habitats Data (DASSH). This new marine subset is in a format that now allows us to share the data with UK, European and global data aggregators such as MEDIN, EurOBIS and OBIS, making the data available to researchers and scientists globally and maximizing the data’s impact on conservation, research and policy.</p>
+<p style="margin:0;">The iNaturalist marine subset will also flow into the Digital Twin Ocean (DTO) BioFlow project, funded by the European Union as a Horizon Europe project. The Digital Twin Ocean will be launched in February and will provide a virtual representation of the ocean by integrating ocean observation data, models and digital infrastructure. DTO-BioFlow will provide us with the tools to simulate a variety of ‘what if’ scenarios, supporting effective conservation, management and policy development.</p>
+</div>
+<div id="all-project-data" class="section level2">
+<h2>All project data</h2>
+<p>Data presented in this section reflect all Big Rock Pool Challenge
+records from the start of the project in October 2024 through 30
+September 2026.</p>
+<div style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:26px;&#10;      margin:20px 0 30px 0;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.08);&#10;      border:1px solid #e8e8e8;&#10;      text-align:center;&#10;    ">
+<h2>Overall Project Summary</h2>
+<div style="&#10;        display:inline-flex;&#10;        gap:18px;&#10;        flex-wrap:wrap;&#10;        justify-content:center;&#10;        align-items:center;&#10;        background:#f5f5f5;&#10;        padding:14px 22px;&#10;        border-radius:999px;&#10;        margin-top:10px;&#10;      ">  <span><strong>35,098</strong> observations</span>
+  <span>·</span>
+  <span><strong>929</strong> contributors</span>
+  <span>·</span>
+  <span><strong>2,116</strong> species</span></div>
+</div>
+<p>Species are grouped into higher-level “iconic taxa” categories based
+on their taxonomic ancestry. This grouping simplifies complex
+species-level data into broader biological categories (e.g. molluscs,
+crustaceans, algae), allowing clearer interpretation of community
+structure across sites and time periods.</p>
+<p><img src="BRPC_Biodiversity_Report_Q3_2026_files/figure-html/iconic-taxa-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The Big Rock Pool Challenge is powered by people. Every observation
+and identification is a contribution to a shared understanding of
+coastal biodiversity.</p>
+<p>Some participants frequently attend events and submit records, while
+others help out by identifying species through verification on
+iNaturalist- all contributions are equally valuable in building the
+dataset.</p>
+<p style='text-align:left;font-size:16px;margin:10px 0 20px 0;'>
+For all project data until end of September 2026, records were submitted by <strong>929</strong> recorders,
+and verified to research grade by <strong>1905</strong> identifiers.
+</p>
+<p>The top recorders and identifiers are presented below- thank you for
+your efforts!</p>
+<div style="&#10;    background:#ffffff;&#10;    border-radius:18px;&#10;    padding:20px;&#10;    box-shadow:0 3px 12px rgba(0,0,0,0.08);&#10;    border:1px solid #ececec;&#10;    margin:20px 0;&#10;  ">
+<h3 style="text-align:center;margin-top:0;">Overall Top Recorders</h3>
+<div style="&#10;      display:flex;&#10;      gap:16px;&#10;      justify-content:center;&#10;      flex-wrap:wrap;&#10;    "><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>aqualydon</div><div style='font-size:13px;color:#666;margin-top:4px;'>1,623 records</div></div><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/8671442/e8afe68c1ed339863aaf2ee7195a17d7-medium.jpeg?1744473969' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/8671442/e8afe68c1ed339863aaf2ee7195a17d7-medium.jpeg?1744473969");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>milliemb</div><div style='font-size:13px;color:#666;margin-top:4px;'>1,280 records</div></div><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/9336957/a5422cc1643c7e457440be4ddefc3787-medium.jpeg?1783895487' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/9336957/a5422cc1643c7e457440be4ddefc3787-medium.jpeg?1783895487");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>kamil_maj</div><div style='font-size:13px;color:#666;margin-top:4px;'>629 records</div></div></div>
+</div>
+<div style="&#10;    background:#ffffff;&#10;    border-radius:18px;&#10;    padding:20px;&#10;    box-shadow:0 3px 12px rgba(0,0,0,0.08);&#10;    border:1px solid #ececec;&#10;    margin:20px 0;&#10;  ">
+<h3 style="text-align:center;margin-top:0;">Overall Top Identifiers</h3>
+<div style="&#10;      display:flex;&#10;      gap:16px;&#10;      justify-content:center;&#10;      flex-wrap:wrap;&#10;    "><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>aqualydon</div><div style='font-size:13px;color:#666;margin-top:4px;'>6,114 identifications</div></div><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/7257062/medium.jpg?1692040101' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/7257062/medium.jpg?1692040101");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>hamlet_ben</div><div style='font-size:13px;color:#666;margin-top:4px;'>2,465 identifications</div></div><div style='
+        flex:1;
+        min-width:120px;
+        max-width:180px;
+        background:#fafafa;
+        border-radius:14px;
+        padding:14px;
+        text-align:center;
+        border:1px solid #e6e6e6;
+      '><a href='https://static.inaturalist.org/attachments/users/icons/6724855/medium.jpg?1694083901' target='_blank'><div style='
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin:0 auto 10px auto;
+    background-image:url("https://static.inaturalist.org/attachments/users/icons/6724855/medium.jpg?1694083901");
+    background-size:cover;
+    background-position:center;
+    border:2px solid #ececec;
+  '></div></a><div style='font-weight:600;font-size:14px;'>ffnaturalist</div><div style='font-size:13px;color:#666;margin-top:4px;'>2,190 identifications</div></div></div>
+</div>
+<div style="height:20px;">
+
+</div>
+<p>Each hub represents a local coastal site where volunteers return to
+record marine life over time. These locations form the backbone of the
+Big Rock Pool Challenge network.</p>
+<p>Because each hub has been running for different lengths of time, and
+is explored by different groups of people, the number of records varies,
+but every contribution adds valuable information about rock pool
+communities at that site.</p>
+<p>Hubs are arranged in alphabetical order.
+<img src="BRPC_Biodiversity_Report_Q3_2026_files/figure-html/map-1.png" width="672" style="display: block; margin: auto;" /></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Hub_ID</th>
+<th align="left">Hub</th>
+<th align="right">Observations</th>
+<th align="right">Contributors</th>
+<th align="right">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">Beadnell Haven</td>
+<td align="right">1750</td>
+<td align="right">28</td>
+<td align="right">298</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">Castle Beach</td>
+<td align="right">14279</td>
+<td align="right">340</td>
+<td align="right">896</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">East Sands</td>
+<td align="right">485</td>
+<td align="right">34</td>
+<td align="right">140</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">Firestone Bay</td>
+<td align="right">757</td>
+<td align="right">47</td>
+<td align="right">232</td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">Kilve Beach</td>
+<td align="right">626</td>
+<td align="right">17</td>
+<td align="right">144</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Lee-on-the-Solent</td>
+<td align="right">3032</td>
+<td align="right">81</td>
+<td align="right">338</td>
+</tr>
+<tr class="odd">
+<td align="right">6</td>
+<td align="left">Menai Bridge</td>
+<td align="right">1400</td>
+<td align="right">56</td>
+<td align="right">358</td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">Mount Batten</td>
+<td align="right">3874</td>
+<td align="right">159</td>
+<td align="right">566</td>
+</tr>
+<tr class="odd">
+<td align="right">4</td>
+<td align="left">Ovingdean</td>
+<td align="right">1836</td>
+<td align="right">61</td>
+<td align="right">283</td>
+</tr>
+<tr class="even">
+<td align="right">5</td>
+<td align="left">Shoeburyness</td>
+<td align="right">1011</td>
+<td align="right">38</td>
+<td align="right">214</td>
+</tr>
+<tr class="odd">
+<td align="right">NA</td>
+<td align="left">No nearby hub*</td>
+<td align="right">6048</td>
+<td align="right">195</td>
+<td align="right">1308</td>
+</tr>
+</tbody>
+</table>
+<p><em>Records labelled <strong>No nearby hub</strong> may be from pilot
+events or annual events such as the National BioBlitz or Community
+BioBlitz Festival. They are not assigned to a recognised hub unless they
+fall within 5 km of that hub.</em></p>
+<div style="height:20px;">
+
+</div>
+<div style="height:20px;">
+
+</div>
+<p>During BioBlitz Battle games, all species recorded earn a score.
+These scores reflect how often this species is recorded in the overall
+Big Rock Pool Challenge dataset. The higher scoring species are those
+that are recorded less often within the project and may represent more
+unusual or less commonly observed species.</p>
+<p>In this report, scores are given between 1-100, according to our
+current scoring system 2.1</p>
+<p>The highest scoring species recorded during the Big Rock Pool
+Challenge to 30/09/2026 are presented below.</p>
+<h2 style="margin-top:40px;margin-bottom:24px;text-align:center;">Highest Scoring Species Across All Project Data</h2>
+<div style="&#10;        display:flex;&#10;        gap:24px;&#10;        justify-content:center;&#10;        flex-wrap:wrap;&#10;        margin-bottom:50px;&#10;      ">
+<div style="&#10;        flex:1;&#10;        min-width:260px;&#10;        max-width:320px;&#10;        background:#ffffff;&#10;        border-radius:18px;&#10;        padding:20px;&#10;        box-shadow:0 3px 12px rgba(0,0,0,0.08);&#10;        border:1px solid #e6e6e6;&#10;        text-align:center;&#10;      ">
+<a href="https://inaturalist-open-data.s3.amazonaws.com/photos/57568832/medium.jpg" target="_blank">
+<div style="width:100%;height:140px;border-radius:10px;background-image:url(&#39;https://inaturalist-open-data.s3.amazonaws.com/photos/57568832/medium.jpg&#39;);background-size:cover;background-position:center;"></div>
+</a>
+<div style="font-size:10px;color:#777;margin-top:6px;">(c) willjacobsmith, some rights reserved (CC BY-NC)</div>
+<div style="&#10;          display:inline-block;&#10;          padding:8px 14px;&#10;          border-radius:999px;&#10;          background:#f5f5f5;&#10;          font-size:15px;&#10;          margin-bottom:14px;&#10;        ">
+<strong>Score: </strong>
+100
+</div>
+<p style="margin-bottom:6px;">
+<strong>Observed by</strong>
+<br/>
+pixnaturalist
+</p>
+<p style="margin-top:0;">
+<strong>Hub</strong>
+<br/>
+Mount Batten
+</p>
+</div>
+<div style="&#10;        flex:1;&#10;        min-width:260px;&#10;        max-width:320px;&#10;        background:#ffffff;&#10;        border-radius:18px;&#10;        padding:20px;&#10;        box-shadow:0 3px 12px rgba(0,0,0,0.08);&#10;        border:1px solid #e6e6e6;&#10;        text-align:center;&#10;      ">
+<a href="https://inaturalist-open-data.s3.amazonaws.com/photos/3408286/medium.jpg" target="_blank">
+<div style="width:100%;height:140px;border-radius:10px;background-image:url(&#39;https://inaturalist-open-data.s3.amazonaws.com/photos/3408286/medium.jpg&#39;);background-size:cover;background-position:center;"></div>
+</a>
+<div style="font-size:10px;color:#777;margin-top:6px;">(c) João Pedro Silva, some rights reserved (CC BY-NC)</div>
+<div style="&#10;          display:inline-block;&#10;          padding:8px 14px;&#10;          border-radius:999px;&#10;          background:#f5f5f5;&#10;          font-size:15px;&#10;          margin-bottom:14px;&#10;        ">
+<strong>Score: </strong>
+100
+</div>
+<p style="margin-bottom:6px;">
+<strong>Observed by</strong>
+<br/>
+aliceyypoo
+</p>
+<p style="margin-top:0;">
+<strong>Hub</strong>
+<br/>
+Castle Beach
+</p>
+</div>
+<div style="&#10;        flex:1;&#10;        min-width:260px;&#10;        max-width:320px;&#10;        background:#ffffff;&#10;        border-radius:18px;&#10;        padding:20px;&#10;        box-shadow:0 3px 12px rgba(0,0,0,0.08);&#10;        border:1px solid #e6e6e6;&#10;        text-align:center;&#10;      ">
+<a href="https://inaturalist-open-data.s3.amazonaws.com/photos/14728441/medium.jpg" target="_blank">
+<div style="width:100%;height:140px;border-radius:10px;background-image:url(&#39;https://inaturalist-open-data.s3.amazonaws.com/photos/14728441/medium.jpg&#39;);background-size:cover;background-position:center;"></div>
+</a>
+<div style="font-size:10px;color:#777;margin-top:6px;">(c) François Roche, some rights reserved (CC BY-NC), uploaded by François Roche</div>
+<div style="&#10;          display:inline-block;&#10;          padding:8px 14px;&#10;          border-radius:999px;&#10;          background:#f5f5f5;&#10;          font-size:15px;&#10;          margin-bottom:14px;&#10;        ">
+<strong>Score: </strong>
+100
+</div>
+<p style="margin-bottom:6px;">
+<strong>Observed by</strong>
+<br/>
+christopher_thomas1
+</p>
+<p style="margin-top:0;">
+<strong>Hub</strong>
+<br/>
+Castle Beach
+</p>
+</div>
+</div>
+<div style="height:20px;">
+
+</div>
+</div>
+<div id="q3-2026" class="section level2">
+<h2>Quarter 3 2026 Data</h2>
+This section presents observations recorded from 1 July to 30 September
+2026, with records separated by hub, or by event where applicable. To
+view the Q3 data summary of a particular hub, please click the links
+below.
+<nav class="report-contents" style="margin:18px 0 28px;padding:18px 22px;background:#f7fafb;border:1px solid #dce7eb;border-radius:14px;">
+<strong style='display:block;margin-bottom:10px;'>Contents</strong><a href='#hub-Beadnell-Haven'>Beadnell
+Haven</a><br><a href='#hub-Castle-Beach'>Castle
+Beach</a><br><a href='#hub-East-Sands'>East
+Sands</a><br><a href='#hub-Firestone-Bay'>Firestone
+Bay</a><br><a href='#hub-Kilve-Beach'>Kilve
+Beach</a><br><a href='#hub-Lee-on-the-Solent'>Lee-on-the-Solent</a><br><a href='#hub-Menai-Bridge'>Menai
+Bridge</a><br><a href='#hub-Ovingdean'>Ovingdean</a><br><a href='#hub-Shoeburyness'>Shoeburyness</a>
+</nav>
+<div id="q3-2026-summary" class="section level3">
+<h3>Q3 2026 Summary</h3>
+<div style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:26px;&#10;      margin:20px 0 30px 0;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.08);&#10;      border:1px solid #e8e8e8;&#10;      text-align:center;&#10;    ">
+<h2>Quarter 3 2026 Summary</h2>
+<div style="&#10;        display:inline-flex;&#10;        gap:18px;&#10;        flex-wrap:wrap;&#10;        justify-content:center;&#10;        align-items:center;&#10;        background:#f5f5f5;&#10;        padding:14px 22px;&#10;        border-radius:999px;&#10;        margin-top:10px;&#10;      ">  <span><strong>3,756</strong> observations</span>
+  <span>·</span>
+  <span><strong>156</strong> contributors</span>
+  <span>·</span>
+  <span><strong>651</strong> species</span></div>
+</div>
+</div>
+<div id="community-bioblitz-festival" class="section level3">
+<h3>Community BioBlitz Festival</h3>
+<p>On 29-30th August 2026, we held our 2nd annual Community BioBlitz
+Festival at the Porthpean Outdoor Centre, St Austell, in Cornwall.</p>
+<p>The festival was a 24 hour wildlife recording event, including family
+fun activities, nature surveys, expert talks and stalls held by partner
+organisations. We are grateful to everyone involved, and you can see the
+full event details and results <a
+href="https://www.therockpoolproject.co.uk/community-bioblitz-festival">here</a>.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;padding:18px;background:#f7fafb;border:1px solid #dce7eb;border-radius:14px;margin:12px 0 24px;">
+<div>
+<div style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:26px;&#10;      margin:20px 0 30px 0;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.08);&#10;      border:1px solid #e8e8e8;&#10;      text-align:center;&#10;    ">
+<h2>Community BioBlitz Festival</h2>
+<div style="&#10;        display:inline-flex;&#10;        gap:18px;&#10;        flex-wrap:wrap;&#10;        justify-content:center;&#10;        align-items:center;&#10;        background:#f5f5f5;&#10;        padding:14px 22px;&#10;        border-radius:999px;&#10;        margin-top:10px;&#10;      ">  <span><strong>403</strong> observations</span>
+  <span>·</span>
+  <span><strong>34</strong> contributors</span>
+  <span>·</span>
+  <span><strong>186</strong> species</span></div>
+</div>
+</div>
+<div>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/6ae4a58dc557cd50f33afa0d_TRPP%20Porthpean%20Bioblitz%2029-08-2026_Fotonow-16_S.jpg" alt="Community BioBlitz Festival at Porthpean" style="display:block;width:100%;height:230px;object-fit:cover;border-radius:10px;"/>
+</div>
+</div>
+</div>
+<div id="pilot-events-in-q3-2026" class="section level3">
+<h3>Pilot Events in Q3 2026</h3>
+<p>The table below lists records collected during pilot events in Q3 of
+2026. During this time, we had four pilot events at three locations. We
+thank everyone who took part, and if you would like to run your own
+pilot event, or find out more, then you can do so <a
+href="https://www.therockpoolproject.co.uk/pilot-events">here</a>.</p>
+<table class="table table-striped table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:left;">
+Location
+</th>
+<th style="text-align:right;">
+Records
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+11 July 2026
+</td>
+<td style="text-align:left;">
+Muckle Uri Geo, Fair Isle
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+04 August 2026
+</td>
+<td style="text-align:left;">
+Crooklets Beach
+</td>
+<td style="text-align:right;">
+172
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+18 August 2026
+</td>
+<td style="text-align:left;">
+Crooklets Beach
+</td>
+<td style="text-align:right;">
+86
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+05 September 2026
+</td>
+<td style="text-align:left;">
+Muckle Uri Geo
+</td>
+<td style="text-align:right;">
+62
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="iconic-taxa-in-q3-2026" class="section level3">
+<h3>Iconic Taxa in Q3 2026</h3>
+<p><img src="BRPC_Biodiversity_Report_Q3_2026_files/figure-html/iconic-q3-plot-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="top-recorders-in-q3" class="section level3">
+<h3>Top Recorders in Q3</h3>
+<div style="background:#fff;border-radius:18px;padding:20px;margin:20px 0;border:1px solid #ececec;">
+<h3 style="text-align:center;margin-top:0;">Q3 Top Recorders</h3>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;"><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://static.inaturalist.org/attachments/users/icons/8671442/e8afe68c1ed339863aaf2ee7195a17d7-medium.jpeg?1744473969' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>milliemb</div><div style='font-size:13px;color:#666;margin-top:4px;'>182 records</div></div><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>aqualydon</div><div style='font-size:13px;color:#666;margin-top:4px;'>142 records</div></div><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>andrew_johns</div><div style='font-size:13px;color:#666;margin-top:4px;'>113 records</div></div></div>
+</div>
+</div>
+<div id="top-identifiers-in-q3" class="section level3">
+<h3>Top Identifiers in Q3</h3>
+<div style="background:#fff;border-radius:18px;padding:20px;margin:20px 0;border:1px solid #ececec;">
+<h3 style="text-align:center;margin-top:0;">Q3 Top Identifiers</h3>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;"><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>aqualydon</div><div style='font-size:13px;color:#666;margin-top:4px;'>541 identifications</div></div><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://static.inaturalist.org/attachments/users/icons/9336957/a5422cc1643c7e457440be4ddefc3787-medium.jpeg?1783895487' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>kamil_maj</div><div style='font-size:13px;color:#666;margin-top:4px;'>340 identifications</div></div><div style='flex:1;min-width:120px;max-width:180px;background:#fafafa;border-radius:14px;padding:14px;text-align:center;border:1px solid #e6e6e6;'><img src='https://static.inaturalist.org/attachments/users/icons/7942503/4ead84d23e787fa753bb57483333c95d-medium.jpg?1741163930' style='width:64px;height:64px;border-radius:50%;margin-bottom:10px;object-fit:cover;'><div style='font-weight:600;font-size:14px;'>davidlyu0604</div><div style='font-size:13px;color:#666;margin-top:4px;'>338 identifications</div></div></div>
+</div>
+</div>
+<div id="hub-summaries-q3" class="section level3">
+<h3>Hub Summaries Q3</h3>
+<div style="margin:0 0 24px 0;padding:22px;background:#f8e9e3;border:1px solid #e7c5b8;border-left:5px solid #c4775e;border-radius:16px;box-sizing:border-box;color:#79594f;">
+<h3 style="margin:0 0 10px 0;font-size:22px;line-height:1.25;color:#783f32;">New feature: Introduced species</h3>
+<p style="margin:0 0 10px 0;font-size:13px;line-height:1.6;">This quarter, we introduce a new feature highlighting non-native species recorded through the Big Rock Pool Challenge. iNaturalist uses taxonomic information and community-curated assessments to flag taxa considered introduced outside their native range.</p>
+<p style="margin:0 0 12px 0;font-size:13px;line-height:1.6;">We share all non-native species data collected through the project each month with interested organisations, including Natural England, NatureScot and Natural Resources Wales, to support monitoring and understanding of species distributions.</p>
+<p style="margin:0;font-size:15px;line-height:1.5;color:#783f32;">
+<strong>132 non-native species records</strong>
+ were recorded in Big Rock Pool Challenge data in Q3 of 2026.
+</p>
+</div>
+<div id="hub-Beadnell-Haven" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68ee485ce2c8ba073e90f031_Beadnell%20Haven_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Beadnell Haven</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>315</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>10</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>115</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f663d2083ef94524503f95_team%20compressed.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Beadnell-Haven.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Crustaceans, Brown algae
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6776165/b8f58d4dc425f30f873b34694e7660d2-medium.jpeg?1782131786' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>janedixon13june70</div><div style='font-size:12px;color:#666;'>80 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/2196079/medium.jpeg?1626548156' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>cmacleodnolan</div><div style='font-size:12px;color:#666;'>50 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9824800/98cdd8aa3e1c8b5f20d305e5bd828609-medium.jpeg?1759229782' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sedabley</div><div style='font-size:12px;color:#666;'>42 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6776165/b8f58d4dc425f30f873b34694e7660d2-medium.jpeg?1782131786' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>janedixon13june70</div><div style='font-size:12px;color:#666;'>332 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/2196079/medium.jpeg?1626548156' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>cmacleodnolan</div><div style='font-size:12px;color:#666;'>76 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9653660/6f3eef892026d4f976958605fde088e5-medium.jpeg?1755589470' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>scubasteveseahouses</div><div style='font-size:12px;color:#666;'>43 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/159839579/medium.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">BEADNELL HAVEN SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Fifteen-scaled Worm</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Harmothoe imbricata</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Beadnell Haven</strong>
+ accounts for 
+<strong>2</strong>
+ of the 
+<strong>2</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Christine Morrow, some rights reserved (CC BY-NC), uploaded by Christine Morrow (CC-BY-NC)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/41425320/medium.jpeg" alt="Pylaiella littoralis" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Pylaiella littoralis</div><div style='font-size:13px;font-style:italic;'>Pylaiella littoralis</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 75</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) ðejay (Orkney), some rights reserved (CC BY-NC), uploaded by ðejay (Orkney)<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/315873891/medium.jpeg" alt="Aplidium glabrum" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Aplidium glabrum</div><div style='font-size:13px;font-style:italic;'>Aplidium glabrum</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 53</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Frédéric ANDRE, some rights reserved (CC BY-NC), uploaded by Frédéric ANDRE<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><div style="height:145px;background:#f1f1f1;border-radius:10px;display:flex;align-items:center;justify-content:center;">No approved image available</div><div style='font-weight:600;margin-top:8px;'>Cryptopleura ruprechtiana</div><div style='font-size:13px;font-style:italic;'>Cryptopleura ruprechtiana</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 52</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: No approved image available<br>Licence: Not displayed</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/416375301/medium.jpg' alt='Chain Tunicate' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Chain Tunicate</td><td style='padding:6px;font-style:italic;'>Botrylloides violaceus</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pauline Walsh Jacobson, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>Carpet Sea Squirt</td><td style='padding:6px;font-style:italic;'>Didemnum vexillum</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Castle-Beach" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e52dddfca602b7e70fd34f_Castle%20Beach_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Castle Beach</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>742</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>23</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>196</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e525f5687223457755b1ef_4%20-%20Alexander%20Lydon.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Castle-Beach.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Crustaceans, Brown algae
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/8671442/e8afe68c1ed339863aaf2ee7195a17d7-medium.jpeg?1744473969' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>milliemb</div><div style='font-size:12px;color:#666;'>182 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>aqualydon</div><div style='font-size:12px;color:#666;'>142 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>alexander_trpp</div><div style='font-size:12px;color:#666;'>61 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6917604/medium.jpg?1716743613' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>aqualydon</div><div style='font-size:12px;color:#666;'>488 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/8671442/e8afe68c1ed339863aaf2ee7195a17d7-medium.jpeg?1744473969' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>milliemb</div><div style='font-size:12px;color:#666;'>193 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/8995853/1e9c218c488bd6066004c38a248de0d3-medium.jpeg?1776421234' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>rachel_edworthy</div><div style='font-size:12px;color:#666;'>81 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/506160311/medium.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">CASTLE BEACH SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Strawberry Anemone</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Actinia fragacea</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Castle Beach</strong>
+ accounts for 
+<strong>15</strong>
+ of the 
+<strong>21</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Polly Tonkins, some rights reserved (CC BY-NC) (CC-BY-NC)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/14728441/medium.jpg" alt="Asterina" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Asterina</div><div style='font-size:13px;font-style:italic;'>Asterina</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 100</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) François Roche, some rights reserved (CC BY-NC), uploaded by François Roche<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><div style="height:145px;background:#f1f1f1;border-radius:10px;display:flex;align-items:center;justify-content:center;">No approved image available</div><div style='font-weight:600;margin-top:8px;'>Gaillona rosea</div><div style='font-size:13px;font-style:italic;'>Gaillona rosea</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 100</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: No approved image available<br>Licence: Not displayed</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/585867/medium.jpg" alt="Kellia suborbicularis" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Kellia suborbicularis</div><div style='font-size:13px;font-style:italic;'>Kellia suborbicularis</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 75</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Jan Johan ter Poorten; modified by Tom Meijer, some rights reserved (CC BY-SA)<br>Licence: cc-by-sa</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/597685370/medium.jpg' alt='Japanese Wireweed' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Japanese Wireweed</td><td style='padding:6px;font-style:italic;'>Sargassum muticum</td><td style='padding:6px;text-align:right;'>21</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) J. Maughn, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>2</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/416375301/medium.jpg' alt='Chain Tunicate' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Chain Tunicate</td><td style='padding:6px;font-style:italic;'>Botrylloides violaceus</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pauline Walsh Jacobson, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-East-Sands" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e7b07fedeb13e53466355c_East%20Sands%20Beach_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">East Sands</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>19</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>3</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>13</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f662a74fb848dae79f6a46_WhatsApp%20Image%202025-10-20%20at%2017.24.27_a9ec7b97.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/East-Sands.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Crustaceans, Molluscs, Brown algae
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/11081276/174c03aa5135ed107b37fa07f33fbed3-medium.jpeg?1790349463' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>rosalie_simpson</div><div style='font-size:12px;color:#666;'>10 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>piper_butterfield</div><div style='font-size:12px;color:#666;'>5 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>birdy79</div><div style='font-size:12px;color:#666;'>4 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/11081276/174c03aa5135ed107b37fa07f33fbed3-medium.jpeg?1790349463' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>rosalie_simpson</div><div style='font-size:12px;color:#666;'>10 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>emonaghan</div><div style='font-size:12px;color:#666;'>7 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>piper_butterfield</div><div style='font-size:12px;color:#666;'>5 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/41373988/medium.jpeg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">EAST SANDS SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Northern Acorn Barnacle</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Semibalanus balanoides</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>East Sands</strong>
+ accounts for 
+<strong>0</strong>
+ of the 
+<strong>9</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">no rights reserved, uploaded by hitchco (CC0)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/338592539/medium.jpeg" alt="Hydractinia echinata" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Hydractinia echinata</div><div style='font-size:13px;font-style:italic;'>Hydractinia echinata</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 35</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) David Gil, some rights reserved (CC BY-NC), uploaded by David Gil<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/66346626/medium.jpg" alt="Spirorbis spirorbis" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Spirorbis spirorbis</div><div style='font-size:13px;font-style:italic;'>Spirorbis spirorbis</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 17</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Christine Morrow, some rights reserved (CC BY-NC), uploaded by Christine Morrow<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><div style="height:145px;background:#f1f1f1;border-radius:10px;display:flex;align-items:center;justify-content:center;">No approved image available</div><div style='font-weight:600;margin-top:8px;'>Electra pilosa</div><div style='font-size:13px;font-style:italic;'>Electra pilosa</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 16</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: No approved image available<br>Licence: Not displayed</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<p style="&#10;            margin:0;&#10;            padding:16px;&#10;            text-align:center;&#10;            background:rgba(255,255,255,0.48);&#10;            border-radius:10px;&#10;            color:#79594f;&#10;            font-size:14px;&#10;          ">No introduced-species observations were recorded for this hub in Q3 2026.</p>
+</div>
+</div>
+<div id="hub-Firestone-Bay" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Firestone Bay</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>342</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>16</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>115</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/697c990f54db5e85539dd7d8_FirestoneBay.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Firestone-Bay.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Crustaceans, Other, Molluscs
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kmuddiman</div><div style='font-size:12px;color:#666;'>95 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6482786/3f8e6c096dbd4a59301fdcbeb1b2077f-medium.jpeg?1752413271' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kini2</div><div style='font-size:12px;color:#666;'>61 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>lowenna_davey</div><div style='font-size:12px;color:#666;'>46 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/7942503/4ead84d23e787fa753bb57483333c95d-medium.jpg?1741163930' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>davidlyu0604</div><div style='font-size:12px;color:#666;'>250 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kmuddiman</div><div style='font-size:12px;color:#666;'>127 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6482786/3f8e6c096dbd4a59301fdcbeb1b2077f-medium.jpeg?1752413271' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kini2</div><div style='font-size:12px;color:#666;'>56 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/116408761/medium.jpg" alt="Lysidice ninetta" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Lysidice ninetta</div><div style='font-size:13px;font-style:italic;'>Lysidice ninetta</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 75</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) smithsonian_marinegeo, some rights reserved (CC BY-NC-SA), uploaded by smithsonian_marinegeo<br>Licence: cc-by-nc-sa</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/7233930/medium.jpg" alt="Schizomavella linearis" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Schizomavella linearis</div><div style='font-size:13px;font-style:italic;'>Schizomavella linearis</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 65</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Bernard Picton, some rights reserved (CC BY), uploaded by Bernard Picton<br>Licence: cc-by</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/78137729/medium.jpg" alt="Plagioecia patina" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Plagioecia patina</div><div style='font-size:13px;font-style:italic;'>Plagioecia patina</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 56</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Christine Morrow, some rights reserved (CC BY-NC), uploaded by Christine Morrow<br>Licence: cc-by-nc</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/590925870/medium.jpg' alt='Wakame' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Wakame</td><td style='padding:6px;font-style:italic;'>Undaria pinnatifida</td><td style='padding:6px;text-align:right;'>2</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) janebowman, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Kilve-Beach" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e7af1e8dbb099b8d5242b3_Kilve%20Beach_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Kilve Beach</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>175</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>8</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>71</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e7ae6ad6b9191fe5bbf189_20250905_142406%20-%20Athena%20Allen%20(1).jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Kilve-Beach.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Sea Anemones, Crustaceans
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9336957/a5422cc1643c7e457440be4ddefc3787-medium.jpeg?1783895487' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kamil_maj</div><div style='font-size:12px;color:#666;'>75 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9656916/830dffcb74ed5a33d12b86bfee6459e2-medium.jpeg?1755940185' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>athenaallen24</div><div style='font-size:12px;color:#666;'>28 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/10016874/d40f0630b46baeeb9c98fb06c36784dc-medium.jpg?1765728186' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sharkeee</div><div style='font-size:12px;color:#666;'>25 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9336957/a5422cc1643c7e457440be4ddefc3787-medium.jpeg?1783895487' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>kamil_maj</div><div style='font-size:12px;color:#666;'>102 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/7942503/4ead84d23e787fa753bb57483333c95d-medium.jpg?1741163930' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>davidlyu0604</div><div style='font-size:12px;color:#666;'>42 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/10016874/d40f0630b46baeeb9c98fb06c36784dc-medium.jpg?1765728186' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sharkeee</div><div style='font-size:12px;color:#666;'>30 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/96599178/medium.jpeg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">KILVE BEACH SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Beaked Barnacle</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Austrominius modestus</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Kilve Beach</strong>
+ accounts for 
+<strong>5</strong>
+ of the 
+<strong>11</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion (CC-BY-NC-SA)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/44358794/medium.jpeg" alt="Electra monostachys" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Electra monostachys</div><div style='font-size:13px;font-style:italic;'>Electra monostachys</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 88</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Sequoia Janirella Wrens, some rights reserved (CC BY-NC), uploaded by Sequoia Janirella Wrens<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/349842686/medium.jpeg" alt="Aplysilla sulfurea" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Aplysilla sulfurea</div><div style='font-size:13px;font-style:italic;'>Aplysilla sulfurea</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 46</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) philwilkinson, some rights reserved (CC BY-NC), uploaded by philwilkinson<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/159837050/medium.jpg" alt="Harmothoe extenuata" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Harmothoe extenuata</div><div style='font-size:13px;font-style:italic;'>Harmothoe extenuata</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 46</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Christine Morrow, some rights reserved (CC BY-NC), uploaded by Christine Morrow<br>Licence: cc-by-nc</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>15</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/96599178/medium.jpeg' alt='Beaked Barnacle' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Beaked Barnacle</td><td style='padding:6px;font-style:italic;'>Austrominius modestus</td><td style='padding:6px;text-align:right;'>5</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion · cc-by-nc-sa</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Lee-on-the-Solent" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f7a42bf2ced5a97ff1d7cc_Lee-on-the-Solent_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Lee-on-the-Solent</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>332</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>18</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>108</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f7a41bfa2bbfcef8002094_IMG_20251018_142731.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Lee-on-the-Solent.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Crustaceans, Other
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9835421/319fdb65cd4aaa9453cd7e9bc98b954c-medium.jpeg?1762027555' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>eveahh</div><div style='font-size:12px;color:#666;'>74 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>pengui</div><div style='font-size:12px;color:#666;'>54 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>jerrypt</div><div style='font-size:12px;color:#666;'>37 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>jennymarine</div><div style='font-size:12px;color:#666;'>141 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9681328/83356aeff62531538694bb182d5bd031-medium.jpeg?1756326180' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>zoe_underwater</div><div style='font-size:12px;color:#666;'>99 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9835421/319fdb65cd4aaa9453cd7e9bc98b954c-medium.jpeg?1762027555' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>eveahh</div><div style='font-size:12px;color:#666;'>93 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/586970409/medium.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">LEE-ON-THE-SOLENT SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Common piddock</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Pholas dactylus</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Lee-on-the-Solent</strong>
+ accounts for 
+<strong>9</strong>
+ of the 
+<strong>9</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Ian Creasey, some rights reserved (CC BY) (CC-BY)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/563053052/medium.jpg" alt="Acanthocardia paucicostata" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Acanthocardia paucicostata</div><div style='font-size:13px;font-style:italic;'>Acanthocardia paucicostata</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 69</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) cccrll, some rights reserved (CC BY-NC), uploaded by cccrll<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/22792825/medium.jpg" alt="Acanthocardia aculeata" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Acanthocardia aculeata</div><div style='font-size:13px;font-style:italic;'>Acanthocardia aculeata</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 62</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Jakob Fahr, some rights reserved (CC BY-NC), uploaded by Jakob Fahr<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/13588166/medium.jpeg" alt="Solieria chordalis" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Solieria chordalis</div><div style='font-size:13px;font-style:italic;'>Solieria chordalis</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 62</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Julien Renoult, some rights reserved (CC BY), uploaded by Julien Renoult<br>Licence: cc-by</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>10</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>Common Atlantic Slippersnail</td><td style='padding:6px;font-style:italic;'>Crepidula fornicata</td><td style='padding:6px;text-align:right;'>6</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/186722213/medium.jpeg' alt='Japanese Littleneck' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Japanese Littleneck</td><td style='padding:6px;font-style:italic;'>Ruditapes philippinarum</td><td style='padding:6px;text-align:right;'>3</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Max Willems, some rights reserved (CC BY-NC), uploaded by Max Willems · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/96599178/medium.jpeg' alt='Beaked Barnacle' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Beaked Barnacle</td><td style='padding:6px;font-style:italic;'>Austrominius modestus</td><td style='padding:6px;text-align:right;'>3</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion · cc-by-nc-sa</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/11249996/medium.jpg' alt='Northern Quahog' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Northern Quahog</td><td style='padding:6px;font-style:italic;'>Mercenaria mercenaria</td><td style='padding:6px;text-align:right;'>2</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) 2011 Marlo F. Krisberg, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>sycamore maple</td><td style='padding:6px;font-style:italic;'>Acer pseudoplatanus</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/544490847/medium.jpg' alt='black pine' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>black pine</td><td style='padding:6px;font-style:italic;'>Pinus nigra</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Dijana Dubrović, some rights reserved (CC BY-NC), uploaded by Dijana Dubrović · cc-by-nc</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Menai-Bridge" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f66091a36dd2e5a7f195a6_Menai%20Bridge_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Menai Bridge</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>128</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>8</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>92</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f65e11c5ec88584d09a9f8_menai%20bridge%20site.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Menai-Bridge.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Crustaceans, Brown algae
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/538337/medium.jpeg?1501731586' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>rogueadventurer</div><div style='font-size:12px;color:#666;'>55 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9138236/46728b71ad1bcdfc5c4b5c3b0c76d66c-medium.jpg?1777192124' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>paulbrazier</div><div style='font-size:12px;color:#666;'>25 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/7942503/4ead84d23e787fa753bb57483333c95d-medium.jpg?1741163930' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>davidlyu0604</div><div style='font-size:12px;color:#666;'>14 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/538337/medium.jpeg?1501731586' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>rogueadventurer</div><div style='font-size:12px;color:#666;'>68 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/3108125/57ffe1b1aa4b8f44e7cc3585af081b89-medium.png?1764207199' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>njacko</div><div style='font-size:12px;color:#666;'>51 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/7942503/4ead84d23e787fa753bb57483333c95d-medium.jpg?1741163930' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>davidlyu0604</div><div style='font-size:12px;color:#666;'>34 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/311907742/medium.jpeg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">MENAI BRIDGE SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Rock Gunnel</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Pholis gunnellus</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Menai Bridge</strong>
+ accounts for 
+<strong>1</strong>
+ of the 
+<strong>1</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Frédéric ANDRE, some rights reserved (CC BY-NC), uploaded by Frédéric ANDRE (CC-BY-NC)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><div style="height:145px;background:#f1f1f1;border-radius:10px;display:flex;align-items:center;justify-content:center;">No approved image available</div><div style='font-weight:600;margin-top:8px;'>Gracilaria vermiculophylla</div><div style='font-size:13px;font-style:italic;'>Gracilaria vermiculophylla</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 88</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: No approved image available<br>Licence: Not displayed</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/464132021/medium.jpeg" alt="Tubulipora" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Tubulipora</div><div style='font-size:13px;font-style:italic;'>Tubulipora</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 81</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Frédéric ANDRE, some rights reserved (CC BY-NC), uploaded by Frédéric ANDRE<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/553436915/medium.jpg" alt="Alderia modesta" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Alderia modesta</div><div style='font-size:13px;font-style:italic;'>Alderia modesta</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 72</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Nathan Jackson, some rights reserved (CC BY-NC), uploaded by Nathan Jackson<br>Licence: cc-by-nc</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/96599178/medium.jpeg' alt='Beaked Barnacle' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Beaked Barnacle</td><td style='padding:6px;font-style:italic;'>Austrominius modestus</td><td style='padding:6px;text-align:right;'>2</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion · cc-by-nc-sa</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Ovingdean" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e7b2e3ee0622ac5288d0ea_Ovingdean%20Beach_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Ovingdean</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>166</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>14</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>68</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68e7b2c1af58aa97a264790e_IMG_3893%20-%20Sophie%20Crocker.jpeg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Ovingdean.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Crustaceans, Sea Anemones
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9876423/3ce04951a06d09d31efea9ca9f03b909-medium.jpeg?1760712244' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>piers22661</div><div style='font-size:12px;color:#666;'>31 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>purpleturtle195</div><div style='font-size:12px;color:#666;'>28 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/8851109/c20dda85b953fe4de7145b21b98c751a-medium.jpeg?1751738948' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sophie_seasearch</div><div style='font-size:12px;color:#666;'>28 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/5617350/ac07e10d65b49076882cd09294d3099e-medium.jpeg?1753265424' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>raphanaja</div><div style='font-size:12px;color:#666;'>57 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/8851109/c20dda85b953fe4de7145b21b98c751a-medium.jpeg?1751738948' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sophie_seasearch</div><div style='font-size:12px;color:#666;'>55 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/2609839/medium.jpg?1583504465' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>ephyra</div><div style='font-size:12px;color:#666;'>51 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/590200423/medium.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">OVINGDEAN SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">Common Atlantic Slippersnail</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Crepidula fornicata</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Ovingdean</strong>
+ accounts for 
+<strong>2</strong>
+ of the 
+<strong>9</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) katiewride, some rights reserved (CC BY-NC) (CC-BY-NC)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/858311/medium.JPG" alt="Odonthalia floccosa" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Odonthalia floccosa</div><div style='font-size:13px;font-style:italic;'>Odonthalia floccosa</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 88</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Rebecca Johnson, some rights reserved (CC BY-NC), uploaded by Rebecca Johnson<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/28459353/medium.jpeg" alt="Taonia atomaria" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Taonia atomaria</div><div style='font-size:13px;font-style:italic;'>Taonia atomaria</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 81</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Crap Fou, some rights reserved (CC BY), uploaded by Crap Fou<br>Licence: cc-by</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/2442968/medium.jpg" alt="Nemalion elminthoides" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Nemalion elminthoides</div><div style='font-size:13px;font-style:italic;'>Nemalion elminthoides</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 55</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Brenna Green, some rights reserved (CC BY-NC-SA), uploaded by Brenna Green<br>Licence: cc-by-nc-sa</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/597685370/medium.jpg' alt='Japanese Wireweed' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Japanese Wireweed</td><td style='padding:6px;font-style:italic;'>Sargassum muticum</td><td style='padding:6px;text-align:right;'>4</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) J. Maughn, some rights reserved (CC BY-NC) · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>Common Atlantic Slippersnail</td><td style='padding:6px;font-style:italic;'>Crepidula fornicata</td><td style='padding:6px;text-align:right;'>2</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr></tbody></table></div>
+</div>
+</div>
+<div id="hub-Shoeburyness" style="&#10;      background:#ffffff;&#10;      border-radius:20px;&#10;      padding:28px;&#10;      margin-bottom:36px;&#10;      box-shadow:0 4px 14px rgba(0,0,0,0.07);&#10;      border:1px solid #e8e8e8;&#10;      width:100%;&#10;      box-sizing:border-box;&#10;      overflow:hidden;&#10;    ">
+<div style="text-align:center;margin-bottom:28px;">
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/69023480819461010c5b7777_Shoeburyness_background.png" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;          width:160px;&#10;          height:160px;&#10;          object-fit:contain;&#10;          margin-bottom:14px;&#10;        "/>
+<h2 style="&#10;          margin:0;&#10;          font-size:28px;&#10;          line-height:1.2;&#10;          color:#183b4a;&#10;        ">Shoeburyness</h2>
+<div style="&#10;          display:inline-block;&#10;          margin-top:14px;&#10;          padding:10px 20px;&#10;          border-radius:999px;&#10;          background:#f2f5f5;&#10;          border:1px solid #e3e9e9;&#10;          font-size:14px;&#10;          color:#40545c;&#10;        ">
+<strong>304</strong>
+ observations 
+<span style="color:#a0aaad;"> · </span>
+<strong>18</strong>
+ contributors 
+<span style="color:#a0aaad;"> · </span>
+<strong>96</strong>
+ species
+</div>
+</div>
+<div style="&#10;        display:grid;&#10;        grid-template-columns:repeat(2,minmax(0,1fr));&#10;        gap:22px;&#10;        width:100%;&#10;      ">
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">The Site</h3>
+<img src="https://cdn.prod.website-files.com/6761e748382f7a483dc6c2ee/68f664397fe026047360f36a_shoeburyness%20team.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            height:320px;&#10;            object-fit:cover;&#10;            border-radius:12px;&#10;          "/>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          text-align:center;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 14px 0;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Iconic Taxa Composition</h3>
+<img src="hub_plots/Shoeburyness.jpg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            display:block;&#10;            width:100%;&#10;            max-width:480px;&#10;            margin:0 auto;&#10;            border-radius:10px;&#10;          "/>
+<p style="&#10;            margin:16px 0 0 0;&#10;            font-size:13px;&#10;            line-height:1.5;&#10;            color:#58676c;&#10;          ">
+<strong>Top iconic groups: </strong>
+Molluscs, Other, Crustaceans
+</p>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Recorders</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>andrew_johns</div><div style='font-size:12px;color:#666;'>113 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9833901/cfcbd370a650e185312ea34305a341e8-medium.jpeg?1759423679' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sammygillies01</div><div style='font-size:12px;color:#666;'>46 observations</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/6627191/medium.jpg?1715105818' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>beachschoolexplorers</div><div style='font-size:12px;color:#666;'>28 observations</div></div></div>
+</div>
+<div style="&#10;          background:#fafbfb;&#10;          border-radius:16px;&#10;          padding:18px;&#10;          border:1px solid #e9eeee;&#10;          min-width:0;&#10;        ">
+<h3 style="&#10;            margin:0 0 16px 0;&#10;            text-align:center;&#10;            font-size:19px;&#10;            color:#294b58;&#10;          ">Top Identifiers</h3>
+<div style="&#10;            display:flex;&#10;            gap:16px;&#10;            justify-content:center;&#10;            flex-wrap:wrap;&#10;          "><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>andrew_johns</div><div style='font-size:12px;color:#666;'>111 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://static.inaturalist.org/attachments/users/icons/9833901/cfcbd370a650e185312ea34305a341e8-medium.jpeg?1759423679' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>sammygillies01</div><div style='font-size:12px;color:#666;'>46 identifications</div></div><div style='flex:1;min-width:110px;max-width:170px;background:#fafafa;border-radius:14px;padding:12px;text-align:center;'><img src='https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png' style='width:58px;height:58px;border-radius:50%;object-fit:cover;margin-bottom:8px;'><div style='font-weight:600;'>emonaghan</div><div style='font-size:12px;color:#666;'>37 identifications</div></div></div>
+</div>
+</div>
+<div style="&#10;          position:relative;&#10;          overflow:hidden;&#10;          margin-top:30px;&#10;          border-radius:20px;&#10;          min-height:300px;&#10;          box-shadow:0 6px 20px rgba(0,0,0,0.14);&#10;          background:#123b52;&#10;          color:#ffffff;&#10;        ">
+<img src="https://inaturalist-open-data.s3.amazonaws.com/photos/475247599/medium.jpeg" onerror="this.src=&#39;https://cdn.prod.website-files.com/6761e748382f7a483dc6c262/68c02913eb9eedda1582018a_iNaturalist%20app.png&#39;;" style="&#10;            position:absolute;&#10;            inset:0;&#10;            width:100%;&#10;            height:100%;&#10;            object-fit:cover;&#10;            object-position:center;&#10;          "/>
+<div style="&#10;            position:absolute;&#10;            inset:0;&#10;            background:linear-gradient(&#10;              90deg,&#10;              rgba(5,25,38,0.96) 0%,&#10;              rgba(5,25,38,0.86) 42%,&#10;              rgba(5,25,38,0.30) 72%,&#10;              rgba(5,25,38,0.12) 100%&#10;            );&#10;          "></div>
+<div style="&#10;            position:relative;&#10;            z-index:2;&#10;            padding:34px;&#10;            max-width:560px;&#10;            box-sizing:border-box;&#10;          ">
+<div style="&#10;              display:inline-block;&#10;              padding:7px 13px;&#10;              border-radius:999px;&#10;              background:rgba(255,255,255,0.16);&#10;              border:1px solid rgba(255,255,255,0.25);&#10;              font-size:12px;&#10;              font-weight:700;&#10;              letter-spacing:0.8px;&#10;              text-transform:uppercase;&#10;              margin-bottom:16px;&#10;            ">SHOEBURYNESS SIGNATURE SPECIES</div>
+<h3 style="&#10;              margin:0 0 6px 0;&#10;              font-size:30px;&#10;              line-height:1.2;&#10;              color:#ffffff;&#10;            ">dwarf eelgrass</h3>
+<div style="&#10;              font-size:18px;&#10;              font-style:italic;&#10;              margin-bottom:22px;&#10;              color:rgba(255,255,255,0.88);&#10;            ">Zostera noltii</div>
+<p style="&#10;              margin:0;&#10;              max-width:500px;&#10;              font-size:14px;&#10;              line-height:1.6;&#10;              color:rgba(255,255,255,0.94);&#10;            ">
+<strong>Shoeburyness</strong>
+ accounts for 
+<strong>11</strong>
+ of the 
+<strong>11</strong>
+ Q3 2026 Big Rock Pool Challenge records for this species.
+</p>
+</div>
+<div style="&#10;              position:absolute;&#10;              z-index:3;&#10;              right:12px;&#10;              bottom:10px;&#10;              max-width:45%;&#10;              padding:5px 8px;&#10;              border-radius:7px;&#10;              background:rgba(0,0,0,0.62);&#10;              color:rgba(255,255,255,0.9);&#10;              font-size:9px;&#10;              line-height:1.35;&#10;              text-align:right;&#10;            ">(c) Frédéric ANDRE, some rights reserved (CC BY-NC), uploaded by Frédéric ANDRE (CC-BY-NC)</div>
+</div>
+<div style="&#10;        margin-top:30px;&#10;        padding:22px;&#10;        background:#f8faf9;&#10;        border:1px solid #e6ece9;&#10;        border-radius:16px;&#10;      ">
+<h3 style="&#10;          text-align:center;&#10;          margin:0 0 18px 0;&#10;          font-size:22px;&#10;          color:#294b45;&#10;        ">Top Scoring Species</h3>
+<div style='display:flex;gap:16px;justify-content:center;flex-wrap:wrap;'><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/37887726/medium.jpeg" alt="Conopeum reticulum" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Conopeum reticulum</div><div style='font-size:13px;font-style:italic;'>Conopeum reticulum</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 60</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) David Renoult, some rights reserved (CC BY-NC), uploaded by David Renoult<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/11471994/medium.jpeg" alt="Chondria coerulescens" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Chondria coerulescens</div><div style='font-size:13px;font-style:italic;'>Chondria coerulescens</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 58</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) Stefan, some rights reserved (CC BY-NC), uploaded by Stefan<br>Licence: cc-by-nc</div></div><div style='flex:1 1 180px;max-width:220px;padding:12px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;text-align:center;box-sizing:border-box;'><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/252438787/medium.jpg" alt="Rhodymenia" style="width:100%;height:145px;object-fit:cover;border-radius:10px;"><div style='font-weight:600;margin-top:8px;'>Rhodymenia</div><div style='font-size:13px;font-style:italic;'>Rhodymenia</div><div style='font-size:12px;color:#555;margin-top:6px;'>Rarity score: 49</div><div style='font-size:10px;color:#777;margin-top:8px;'>Image credit: (c) kristobal22, some rights reserved (CC BY-NC), uploaded by kristobal22<br>Licence: cc-by-nc</div></div></div>
+</div>
+<div style="&#10;        margin-top:22px;&#10;        padding:22px;&#10;        background:#f8e9e3;&#10;        border:1px solid #e7c5b8;&#10;        border-left:5px solid #c4775e;&#10;        border-radius:16px;&#10;        box-sizing:border-box;&#10;      ">
+<div style="&#10;          text-align:center;&#10;          max-width:700px;&#10;          margin:0 auto 18px auto;&#10;        ">
+<h3 style="&#10;            margin:0 0 8px 0;&#10;            font-size:22px;&#10;            line-height:1.25;&#10;            color:#783f32;&#10;          ">Non-native species records in Q3 2026</h3>
+</div>
+<div style="&#10;            background:rgba(255,255,255,0.42);&#10;            border-radius:10px;&#10;            padding:12px;&#10;            overflow-x:auto;&#10;          "><table style='width:100%;border-collapse:collapse;font-size:12px;'><thead><tr style='background:#f3f5f4;'><th style='padding:7px;text-align:left;'>Image</th><th style='padding:7px;text-align:left;'>Common name</th><th style='padding:7px;text-align:left;'>Scientific name</th><th style='padding:7px;text-align:right;'>Records</th><th style='padding:7px;text-align:left;width:90px;max-width:90px;'>Image credit</th></tr></thead><tbody><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/50908026/medium.jpg' alt='Pacific Oyster' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Pacific Oyster</td><td style='padding:6px;font-style:italic;'>Magallana gigas</td><td style='padding:6px;text-align:right;'>8</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>no rights reserved, uploaded by Al Kordesch · cc0</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>Brush-clawed Shore Crab</td><td style='padding:6px;font-style:italic;'>Hemigrapsus takanoi</td><td style='padding:6px;text-align:right;'>4</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><span style='color:#888;'>No image</span></td><td style='padding:6px;'>Common Atlantic Slippersnail</td><td style='padding:6px;font-style:italic;'>Crepidula fornicata</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>No image credit available</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/186722213/medium.jpeg' alt='Japanese Littleneck' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Japanese Littleneck</td><td style='padding:6px;font-style:italic;'>Ruditapes philippinarum</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Max Willems, some rights reserved (CC BY-NC), uploaded by Max Willems · cc-by-nc</span></td></tr><tr style='border-top:1px solid #e5e5e5;'><td style='padding:6px;'><img src='https://inaturalist-open-data.s3.amazonaws.com/photos/96599178/medium.jpeg' alt='Beaked Barnacle' style='width:54px;height:44px;object-fit:cover;border-radius:6px;'></td><td style='padding:6px;'>Beaked Barnacle</td><td style='padding:6px;font-style:italic;'>Austrominius modestus</td><td style='padding:6px;text-align:right;'>1</td><td style='padding:6px;width:90px;max-width:90px;overflow-wrap:anywhere;'><span style='font-size:10px;color:#888;overflow-wrap:anywhere;'>(c) Pierre Corbrion, some rights reserved (CC BY-NC-SA), uploaded by Pierre Corbrion · cc-by-nc-sa</span></td></tr></tbody></table></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

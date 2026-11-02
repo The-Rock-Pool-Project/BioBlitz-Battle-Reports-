@@ -280,3 +280,162 @@ table tbody tr:nth-child(odd) {
     object-fit: contain !important;
   }
 }
+
+/* ---------- Responsive report layouts ---------- */
+
+@media screen and (max-width: 700px) {
+
+  /* Prevent page-level horizontal overflow */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .container,
+  .main-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* Stack explicitly marked grid layouts */
+  .mobile-stack {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Correct the scaled opening introduction */
+  .intro-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    transform-origin: top left !important;
+  }
+
+  /* Hub panels */
+  .hub-card,
+  .mobile-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 18px !important;
+    box-sizing: border-box;
+  }
+
+  .hub-card h2 {
+    font-size: 23px !important;
+  }
+
+  .hub-card h3 {
+    font-size: 19px !important;
+  }
+
+  /* Images and embedded content */
+  .hub-card img,
+  .mobile-card img {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .figure,
+  .html-widget {
+    max-width: 100% !important;
+  }
+
+  /* Keep wide tables usable on narrow screens */
+  .hub-card table,
+  .mobile-card table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent long text and flex children forcing overflow */
+  .hub-card *,
+  .mobile-card * {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* Signature species feature */
+  .signature-species-card {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+/* Smaller phones */
+@media screen and (max-width: 480px) {
+
+  body {
+    padding: 0.75rem;
+    font-size: 15px;
+  }
+
+  .report-title {
+    font-size: 32px;
+  }
+
+  .hub-card,
+  .mobile-card {
+    padding: 14px !important;
+  }
+
+  .hub-card h2 {
+    font-size: 21px !important;
+  }
+
+  .hub-card h3 {
+    font-size: 18px !important;
+  }
+
+  .report-logo {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  /* Opening introduction: stack project and funders */
+  .intro-wrapper > div {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+  }
+
+  /* Hub panels: stack all four sections */
+  .hub-card .mobile-stack {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+  }
+
+  /* Make hub cards use the available width */
+  .hub-card {
+    width: 100% !important;
+    padding: 16px !important;
+    box-sizing: border-box;
+  }
+
+  /* Prevent usernames overflowing */
+  .hub-card {
+    overflow-wrap: anywhere;
+  }
+
+  .hub-card img {
+    max-width: 100%;
+    height: auto;
+  }
+}
